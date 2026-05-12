@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+  
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+  --color-brand-950: #1e1b4b;
+
+  --color-accent-blue: #3b82f6;
+  --color-accent-light: #60a5fa;
+  --color-slate-subtle: #94a3b8;
+  --color-deep-black: #050505;
+}
+
+@layer base {
+  body {
+    @apply bg-deep-black text-white antialiased selection:bg-brand-500/30 selection:text-white font-sans;
+    background: radial-gradient(circle at 80% 20%, #1e1b4b 0%, #050505 50%), 
+                radial-gradient(circle at 20% 80%, #1e3a8a 0%, #050505 50%);
+  }
+}
+
+.glass {
+  @apply backdrop-blur-[10px] bg-white/3 border border-white/8;
+}
+
+.glass-dark {
+  @apply backdrop-blur-[12px] bg-white/5 border border-white/10 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)];
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-slate-400;
+}
+
+.gradient-brand {
+  @apply bg-gradient-to-br from-[#6366f1] to-[#3b82f6];
+}
+
+.btn-shadow {
+  @apply shadow-[0_10px_15px_-3px_rgba(59,130,246,0.3)];
+}
+
