@@ -40,7 +40,7 @@ npm run dev
 - **Browser Extension**: Detect new tool signups in real-time.
 
 ## 🔗 Live Demo
-[View App](https://ais-dev-bzipyxwwpm7uyb2k6gjmsi-843412861446.asia-southeast1.run.app)
+https://ai-spend-auditor-gamma.vercel.app/
 
 ---
 *Created for the Credex Assignment.*
